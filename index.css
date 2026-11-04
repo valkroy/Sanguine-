@@ -980,3 +980,17 @@ body.intro-locked {
         animation: none;
     }
 }
+.intro-symbol .intro-monogram {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 53px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 30px #d52a4b88;
+}
+
+@media (max-width: 600px) {
+    .intro-symbol .intro-monogram {
+        font-size: 43px;
+    }
+}
