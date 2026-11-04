@@ -4,6 +4,29 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+// SANGUINE INTRO SCREEN
+
+const introScreen = document.getElementById("introScreen");
+const introEnter = document.getElementById("introEnter");
+
+if (introScreen && introEnter) {
+
+    document.body.classList.add("intro-locked");
+
+    introEnter.addEventListener("click", () => {
+
+        introScreen.classList.add("leaving");
+
+        document.body.classList.remove("intro-locked");
+
+        setTimeout(() => {
+            introScreen.remove();
+        }, 1100);
+
+    });
+
+}
+
     // MOBILE NAVIGATION
     const menu = document.getElementById("menu");
     const nav = document.getElementById("nav");
