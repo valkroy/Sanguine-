@@ -1004,3 +1004,54 @@ footer small {
     }
 
 }
+/* SANGUINE — Crimson Mouse Trail */
+
+.mouse-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ff3030;
+    pointer-events: none;
+    z-index: 99999;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition:
+        left 0.13s ease-out,
+        top 0.13s ease-out,
+        opacity 0.25s ease;
+    box-shadow: 0 0 10px rgba(255, 30, 30, 0.65);
+}
+
+.mouse-trail:nth-child(2) {
+    transition-duration: 0.19s;
+    opacity: 0;
+}
+
+.mouse-trail:nth-child(3) {
+    transition-duration: 0.25s;
+    opacity: 0;
+}
+
+.mouse-trail:nth-child(4) {
+    transition-duration: 0.31s;
+    opacity: 0;
+}
+
+.mouse-trail:nth-child(5) {
+    transition-duration: 0.37s;
+    opacity: 0;
+}
+
+.mouse-trail:nth-child(6) {
+    transition-duration: 0.43s;
+    opacity: 0;
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+    .mouse-trail {
+        display: none;
+    }
+}
