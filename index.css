@@ -1044,7 +1044,20 @@ footer small {
     transition-duration: 0.37s;
     opacity: 0;
 }
+/* SANGUINE — SMOOTH CRIMSON TRAIL */
 
+#mouseTrail {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99998;
+}
+
+body {
+    cursor: auto;
+}
 .mouse-trail:nth-child(6) {
     transition-duration: 0.43s;
     opacity: 0;
